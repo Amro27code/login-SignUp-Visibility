@@ -23,10 +23,10 @@ class _MrPotatoState extends State<MrPotato> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Mr.Potato'),),
+      appBar: AppBar(title: Text('MrPotato'),),
       body: SingleChildScrollView(
         child: Column(
-          //
+
           children: [
             Stack(children: [
             Visibility( visible: showBody,child: Image.asset('assets/body.png')),
@@ -43,7 +43,8 @@ class _MrPotatoState extends State<MrPotato> {
             ],
             ),
             GridView(
-              shrinkWrap: true,
+
+              shrinkWrap: true,//
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
                 childAspectRatio: 2,
